@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+</head>
+<body>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <input type="submit" value="Upload">
+    </form>
+    {% if description %}
+        <p>Description: {{ description }}</p>
+    {% endif %}
+</body>
+</html>
